@@ -6,7 +6,7 @@ const Home = () => {
     const [tasks, setTasks] = useState([]);
     const time = TimeHooks();
     useEffect(() => {
-        fetch("http://localhost:5000/tasks")
+        fetch("https://task-management-server-nbib.onrender.com/tasks")
             .then(data => data.json())
             .then(data => setTasks(data));
     }, [])

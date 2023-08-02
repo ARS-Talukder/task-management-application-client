@@ -10,7 +10,7 @@ const TaskForm = () => {
             description: description,
             status: false
         }
-        fetch('http://localhost:5000/tasks', {
+        fetch('https://task-management-server-nbib.onrender.com/tasks', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

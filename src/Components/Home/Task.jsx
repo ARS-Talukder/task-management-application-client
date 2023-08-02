@@ -8,7 +8,7 @@ const Task = ({ task }) => {
     const handleDelete = () => {
         const proceed = window.confirm('Do You Want to Cancel Your Appointment?');
         if (proceed) {
-            fetch(`http://localhost:5000/task_delete?id=${id}`, {
+            fetch(`https://task-management-server-nbib.onrender.com/task_delete?id=${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -23,7 +23,7 @@ const Task = ({ task }) => {
         const title = e.target.title.value;
         const description = e.target.description.value;
         const updatedTask = { title, description };
-        fetch(`http://localhost:5000/task_update?id=${id}`, {
+        fetch(`https://task-management-server-nbib.onrender.com/task_update?id=${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -39,7 +39,7 @@ const Task = ({ task }) => {
 
     const handleComplete = () => {
         const updatedTask = { status: true };
-        fetch(`http://localhost:5000/status_update?id=${id}`, {
+        fetch(`https://task-management-server-nbib.onrender.com/status_update?id=${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
