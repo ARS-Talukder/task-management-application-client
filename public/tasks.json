@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Job Email Send",
+        "description": "I need to send 10 Job everyday",
+        "status": true
+    },
+    {
+        "title": "LinkedIn Profile",
+        "description": "I need to set up linked in profile",
+        "status": false
+    },
+    {
+        "title": "Coding Practice",
+        "description": "Coding Practice everyday morning",
+        "status": true
+    },
+    {
+        "title": "Job Email Send",
+        "description": "I need to send 10 Job everyday",
+        "status": true
+    }
+]

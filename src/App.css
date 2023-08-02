@@ -1,0 +1,35 @@
+.app_container {
+    background-image: url("https://i.ibb.co/sPm5bDD/background-Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home_container {
+    border-radius: 20px;
+    padding: 35px;
+
+    background: rgba(121, 121, 121, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.time_container {
+    color: rgb(147, 39, 3);
+}
+
+.add_button {
+    animation-name: jumping;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jumping {
+    0% {
+        font-size: 72px;
+    }
+
+    100% {
+        font-size: 90px;
+    }
+}
